@@ -45,7 +45,6 @@ public class MainActivity extends Activity {
     }
 
 
-
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
@@ -53,8 +52,6 @@ public class MainActivity extends Activity {
             requestImmersiveMode();
         }
     }
-
-
 
 
     //****************************************
@@ -75,7 +72,6 @@ public class MainActivity extends Activity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
     }
-
 
 
     private void requestTaskLock() {
@@ -99,8 +95,6 @@ public class MainActivity extends Activity {
                 startLockTask(); //Working in emulation mode
                 showThisViewAndHideOthers (textNotADeviceAdmin);
             }
-
-
     }
 
 
@@ -113,7 +107,6 @@ public class MainActivity extends Activity {
         } else {
             Toast.makeText (this, R.string.not_in_kiosk_mode, Toast.LENGTH_SHORT).show ();
         }
-
     }
 
 
@@ -126,6 +119,7 @@ public class MainActivity extends Activity {
         if(isAppInLockTaskMode ()) return;
         super.finish ();
     }
+
 
     private boolean isAppInLockTaskMode() {
         ActivityManager activityManager;
@@ -145,7 +139,6 @@ public class MainActivity extends Activity {
 
         return false;
     }
-
 
 
     private void showThisViewAndHideOthers (View v){
