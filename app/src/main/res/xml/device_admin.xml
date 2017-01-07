@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-policies>
+        <!-- Task lock so not actually uses any policies, but we need file to define
+                <limit-password />
+                <force-lock />
+                <watch-login />
+                <reset-password />
+                <wipe-data />
+                <expire-password />
+                <encrypted-storage />
+                <disable-camera />
+                <disable-keyguard-features />
+                -->
+    </uses-policies>
+</device-admin>

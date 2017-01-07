@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TestKiosk</string>
+
+    <string name="button_exit_kiosk_mode_text">Exit kiosk mode</string>
+    <string name="not_in_kiosk_mode">Not in kiosk mode already</string>
+
+
+    <string name="text_not_a_device_admin_text">App is not a device admin. See DEVICE_ADMIN_README.txt file in repository</string>
+    <string name="text_no_permission_text">App has no permission to enter kiosk mode. I don\'t know why this may happen. If you\'ve found the reason, please mail pvolan@mail.ru</string>
+    <string name="text_kiosk_mode_wokring">App is in kiosk mode. You can\'t close an app in other way then pressing \"Exit kiosk mode\" button below</string>
+
+    <string name="admin_receiver_label">Tesk Kiosk app</string>
+    <string name="admin_receiver_description">Do you really need some description?</string>
+</resources>
