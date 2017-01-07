@@ -106,7 +106,7 @@ public class MainActivity extends Activity {
 
     private void stopLock(){
 
-        //Note. Double call for stopLockTask() causes crash, so you should check if you app is really in lock mode
+        //Note. Double call for stopLockTask() sometimes causes crash, so you should check if you app is really in lock mode
         if(isAppInLockTaskMode()) {
             stopLockTask();
             showThisViewAndHideOthers (null);
