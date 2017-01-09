@@ -5,6 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:textColor="#f00"/>
+
+    <TextView
+        android:id="@+id/text_not_a_device_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:text="@string/text_not_a_device_admin_text"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/text_no_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:text="@string/text_no_permission_text"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/text_kiosk_mode_working"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:text="@string/text_kiosk_mode_wokring"
+        android:visibility="gone"/>
+
+
+
     <Button
         android:id="@+id/button_exit_kiosk_mode"
         android:layout_width="wrap_content"
@@ -13,27 +49,5 @@
         android:text="@string/button_exit_kiosk_mode_text"
         />
 
-
-    <TextView
-        android:id="@+id/text_not_a_device_admin"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/text_not_a_device_admin_text"
-        android:visibility="gone"/>
-
-
-    <TextView
-        android:id="@+id/text_no_permission"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/text_no_permission_text"
-        android:visibility="gone"/>
-
-    <TextView
-        android:id="@+id/text_kiosk_mode_working"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/text_kiosk_mode_wokring"
-        android:visibility="gone"/>
 
 </RelativeLayout>
